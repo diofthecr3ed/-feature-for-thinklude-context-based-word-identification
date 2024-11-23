@@ -19,7 +19,7 @@ def index():
         user_input = request.form.get('user_input')  # Get user input from form
 
         payload = {
-            "system": "Remove stop words from input text. For remaining words, append a context category after each word, separated by '_'. Categories: 'everyday', 'finance_and_banking', 'legal', 'numbers', 'states_and_cities', 'technical', 'health', 'retail', 'travel', 'food', 'living', 'entertainment', 'social', 'proper_noun', 'geography'. Example: Input: 'I am not feeling good in Paris' → Output: 'feeling_health, good_health, Paris_proper_noun'.",
+            "system": "Summarise sentence in words available in sign language. append a context category after each word, separated by '_'. Categories: 'everyday', 'finance_and_banking', 'legal', 'numbers', 'states_and_cities', 'technical', 'health', 'retail', 'travel', 'food', 'living', 'entertainment', 'social', 'proper_noun', 'geography'. Example: Input: 'I am not feeling good in Paris' → Output: 'feeling_health, good_health, Paris_proper_noun'.",
             "user": user_input
         }
 
